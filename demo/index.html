@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>动画效果</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+      <div class='main'  id='main'>
+      <script>
+          $('#main').css({
+            height : window.innerHeight
+          });
+      </script>
+      
+      <div class="contents-parent" id='txt'>
+          <!--文本内容-->
+          <!--<div class="contents" id='c1'>
+            <p>成功捣毁电信网络诈骗犯罪窝点3个</p>
+            <p class="en">the Ministry of Public Security Bureau of criminal investigatio</p>
+          </div>-->
+      </div>
+          
+      <div class="inputs">
+        <input type="text" name='origin' />
+        <input type="text" name='target' />
+        <button id='btn'>输入数据</button>
+      </div>
+    </div>
+
+    <script src='assets/js/jquery.easing.js'></script>
+    <script src="../lib/index.js"></script>
+    <script>
+      var obj = new rollTxt('#txt' ,
+      {"opacity" : 0 , 
+      ease : 'easeOutQuart',
+      "time" : 8000  ,});
+      $('#btn').click(function(){
+        obj.startMove($('input[name="origin"]').val() ,$('input[name="target"]').val());
+        
+      });
+      $('input[name=origin]').keyup(function(){
+        obj.updateText(this.value);
+      });
+  </script>
+  </body>
+</html>
