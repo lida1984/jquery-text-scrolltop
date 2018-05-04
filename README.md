@@ -13,7 +13,9 @@
     + 实例对象提供两个方法 ： 
         + updateText : 实时纠正效果
         + startMove : 生成动画
-## options配置参数
+### id 参数
+    + id 为父元素id 
+### options配置参数
 
 ```js
 bottom: '80%',         //相对父级要移动的距离
