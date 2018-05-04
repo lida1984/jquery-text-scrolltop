@@ -5,7 +5,7 @@
 
 + 1 依赖 jquery , jquery.easing.js ;
 
-+ 2 直接引入 lib/index.js 。
++ 2 页面中直接引入 lib/index.js 。
 
 + 3 生成实例对象
 
