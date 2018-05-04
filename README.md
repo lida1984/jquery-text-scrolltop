@@ -10,11 +10,11 @@
 + 3 生成实例对象
 
     + var obj = new rollTxt(id , options);
-    + 实例对象提供两个方法 ： 
+    + 实例对象提供两个方法, 这两个方法传参为文本内容 ： 
         + updateText : 实时纠正效果
         + startMove : 生成动画
 ### id 参数
-    + id 为父元素id 
+    id 为容器元素id 
 ### options配置参数
 
 ```js
