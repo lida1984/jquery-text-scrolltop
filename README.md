@@ -22,3 +22,4 @@ bottom: '80%',         //相对父级要移动的距离
 ,time : 4000           //动画时长 单位 ms
 ,ease : 'easeOutQuart' //动画效果
 ```
+
